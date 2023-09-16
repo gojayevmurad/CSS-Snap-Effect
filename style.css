@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+  font-family: "Mooli", sans-serif;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  transition: 2s linear;
+}
+
+.container .position {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  transform: translate(-50%, -50%);
+}
+.container .position .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.container .empty {
+  height: 100px;
+  background-color: #fff;
+}
+
+body {
+  border: 1px solid purple;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+h1 {
+  color: rgb(226, 226, 226);
+  text-shadow: 1px 1px 4px #000;
+  font-size: 2rem;
+}
+
+.one {
+  background-color: rgb(36, 164, 138);
+}
+.two {
+  background-color: rgb(211, 79, 79);
+}
+.three {
+  background-color: rgb(67, 91, 175);
+}
+.four {
+  background-color: rgb(191, 64, 191);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
